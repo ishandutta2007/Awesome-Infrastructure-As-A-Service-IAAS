@@ -3,7 +3,7 @@
 <div align="center">
 
 <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-<a href="https://github.com/ishandutta2007/Awesome-Infrastructure-As-A-Service-IAAS/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Infrastructure-As-A-Service-IAAS?style=social" alt="GitHub Stars" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Infrastructure-As-A-Service-IAAS/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Infrastructure-As-A-Service-IAAS?style=social" alt="GitHub_Stars" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Infrastructure-As-A-Service-IAAS/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Infrastructure-As-A-Service-IAAS?style=social" alt="GitHub Forks" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Infrastructure-As-A-Service-IAAS/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License" /></a>
 <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -64,45 +64,45 @@ Market dynamics are **heavily concentrated at the top**—where the top 5 hypers
 
 ## 💻 Open-Source GitHub Projects
 
-Sorted in descending order by GitHub stars. Star counts update dynamically via GitHub shields linking directly to each repository's stargazers.
+Sorted in descending order by GitHub_Stars. Stars_Counts update dynamically via GitHub shields linking directly to each repository's stargazers.
 
-- **[Firecracker](https://github.com/firecracker-microvm/firecracker)** [![GitHub stars](https://img.shields.io/github/stars/firecracker-microvm/firecracker?style=social&color=white)](https://github.com/firecracker-microvm/firecracker/stargazers)  
+- **[Firecracker](https://github.com/firecracker-microvm/firecracker)** [![GitHub_Stars](https://img.shields.io/github/stars/firecracker-microvm/firecracker?style=social&color=white)](https://github.com/firecracker-microvm/firecracker/stargazers)  
   **Secure and ultra-fast microVMs for serverless computing and multi-tenant IaaS.** Developed by Amazon Web Services in Rust and open-sourced under Apache 2.0, Firecracker runs on KVM to spin up lightweight virtual machines in as little as 5 milliseconds with minimal memory overhead (<5 MiB). Serves as the high-density isolation backbone behind AWS Lambda, AWS Fargate, and modern serverless platforms.
 
-- **[KubeVirt](https://github.com/kubevirt/kubevirt)** [![GitHub stars](https://img.shields.io/github/stars/kubevirt/kubevirt?style=social&color=white)](https://github.com/kubevirt/kubevirt/stargazers)  
+- **[KubeVirt](https://github.com/kubevirt/kubevirt)** [![GitHub_Stars](https://img.shields.io/github/stars/kubevirt/kubevirt?style=social&color=white)](https://github.com/kubevirt/kubevirt/stargazers)  
   **Kubernetes-native virtualization technology.** CNCF Graduated project that extends Kubernetes via Custom Resource Definitions (CRDs) to orchestrate traditional virtual machines side-by-side with container workloads on the same cluster substrate. Bridges the architectural gap between legacy VM monoliths and cloud-native containerized microservices.
 
-- **[Incus](https://github.com/lxc/incus)** [![GitHub stars](https://img.shields.io/github/stars/lxc/incus?style=social&color=white)](https://github.com/lxc/incus/stargazers)  
+- **[Incus](https://github.com/lxc/incus)** [![GitHub_Stars](https://img.shields.io/github/stars/lxc/incus?style=social&color=white)](https://github.com/lxc/incus/stargazers)  
   **The community-governed successor to LXD.** Born from Canonical's decision to take LXD in-house and relicense it to AGPLv3, Incus is a direct fork maintained under the Linux Containers (LXC) project under Apache 2.0. Manages both system containers and full QEMU-based virtual machines through a unified REST API and CLI with native OCI image support, OpenFGA/OIDC identity integrations, and live resource hot-plugging.
 
-- **[Harvester](https://github.com/harvester/harvester)** [![GitHub stars](https://img.shields.io/github/stars/harvester/harvester?style=social&color=white)](https://github.com/harvester/harvester/stargazers)  
+- **[Harvester](https://github.com/harvester/harvester)** [![GitHub_Stars](https://img.shields.io/github/stars/harvester/harvester?style=social&color=white)](https://github.com/harvester/harvester/stargazers)  
   **Open-source enterprise hyperconverged infrastructure (HCI).** Built by SUSE Rancher, Harvester brings together KubeVirt, KVM, and Longhorn distributed block storage into a turnkey, bare-metal appliance. Designed as an open-source, operator-friendly alternative to VMware vSphere and Nutanix for private cloud edge and datacenter infrastructure.
 
-- **[LXD](https://github.com/canonical/lxd)** [![GitHub stars](https://img.shields.io/github/stars/canonical/lxd?style=social&color=white)](https://github.com/canonical/lxd/stargazers)  
+- **[LXD](https://github.com/canonical/lxd)** [![GitHub_Stars](https://img.shields.io/github/stars/canonical/lxd?style=social&color=white)](https://github.com/canonical/lxd/stargazers)  
   **Next-generation system container and virtual machine manager by Canonical.** Provides a cloud-like user experience for managing system containers (LXC) and full virtual machines (QEMU) with built-in image management, clustering, storage pools (ZFS, Btrfs, Ceph, LVM), and network integration with OVN.
 
-- **[OpenStack (Nova)](https://github.com/openstack/nova)** [![GitHub stars](https://img.shields.io/github/stars/openstack/nova?style=social&color=white)](https://github.com/openstack/nova/stargazers)  
+- **[OpenStack (Nova)](https://github.com/openstack/nova)** [![GitHub_Stars](https://img.shields.io/github/stars/openstack/nova?style=social&color=white)](https://github.com/openstack/nova/stargazers)  
   **The enterprise open-source IaaS standard.** Nova is the core compute service within the broader OpenStack ecosystem, coordinating VM lifecycle, scheduling, and placement across thousands of hypervisor nodes. The OpenStack platform integrates Keystone (identity), Neutron (software-defined networking), Cinder (block storage), and Glance (images) for massive telecom, enterprise, and sovereign cloud deployments.
 
-- **[Apache CloudStack](https://github.com/apache/cloudstack)** [![GitHub stars](https://img.shields.io/github/stars/apache/cloudstack?style=social&color=white)](https://github.com/apache/cloudstack/stargazers)  
+- **[Apache CloudStack](https://github.com/apache/cloudstack)** [![GitHub_Stars](https://img.shields.io/github/stars/apache/cloudstack?style=social&color=white)](https://github.com/apache/cloudstack/stargazers)  
   **Mature enterprise cloud orchestrator with streamlined operations.** An Apache Top-Level Project since 2013, CloudStack offers a turnkey turnkey IaaS management engine with an all-in-one management server architecture. Supports KVM, VMware vSphere, XenServer/XCP-ng, and Proxmox VE, offering multi-zone orchestration, automated VPC networking, and built-in CloudStack Kubernetes Service (CKS).
 
-- **[Mist](https://github.com/mistio/mist-ce)** [![GitHub stars](https://img.shields.io/github/stars/mistio/mist-ce?style=social&color=white)](https://github.com/mistio/mist-ce/stargazers)  
+- **[Mist](https://github.com/mistio/mist-ce)** [![GitHub_Stars](https://img.shields.io/github/stars/mistio/mist-ce?style=social&color=white)](https://github.com/mistio/mist-ce/stargazers)  
   **Open-source multicloud management and IaaS abstraction platform.** Provides a unified web interface, REST API, and CLI to orchestrate, automate, and monitor virtual machines, bare metal servers, and container clusters across diverse clouds (AWS, GCP, Azure, DigitalOcean, Hetzner, OpenStack, and KVM).
 
-- **[OpenNebula](https://github.com/OpenNebula/one)** [![GitHub stars](https://img.shields.io/github/stars/OpenNebula/one?style=social&color=white)](https://github.com/OpenNebula/one/stargazers)  
+- **[OpenNebula](https://github.com/OpenNebula/one)** [![GitHub_Stars](https://img.shields.io/github/stars/OpenNebula/one?style=social&color=white)](https://github.com/OpenNebula/one/stargazers)  
   **Open-source cloud and edge computing platform specialized in VMware migration.** Features AI-powered OneDRS dynamic scheduling, NetApp and Veeam integrations, and native support for GPU pass-through/vGPU with AI inference appliances (Ray + vLLM). Excels at transforming existing virtualization infrastructure into agile, self-service private and hybrid clouds.
 
-- **[Xen Orchestra](https://github.com/vatesfr/xen-orchestra)** [![GitHub stars](https://img.shields.io/github/stars/vatesfr/xen-orchestra?style=social&color=white)](https://github.com/vatesfr/xen-orchestra/stargazers)  
+- **[Xen Orchestra](https://github.com/vatesfr/xen-orchestra)** [![GitHub_Stars](https://img.shields.io/github/stars/vatesfr/xen-orchestra?style=social&color=white)](https://github.com/vatesfr/xen-orchestra/stargazers)  
   **Turnkey web management, backup, and orchestration solution for XCP-ng and XenServer.** Provides an agentless administration UI, continuous replication, incremental delta backups, live migration, and self-service cloud provisioning for open-source Xen-based virtualization clusters.
 
-- **[oVirt Engine](https://github.com/oVirt/ovirt-engine)** [![GitHub stars](https://img.shields.io/github/stars/oVirt/ovirt-engine?style=social&color=white)](https://github.com/oVirt/ovirt-engine/stargazers)  
+- **[oVirt Engine](https://github.com/oVirt/ovirt-engine)** [![GitHub_Stars](https://img.shields.io/github/stars/oVirt/ovirt-engine?style=social&color=white)](https://github.com/oVirt/ovirt-engine/stargazers)  
   **Feature-rich virtualization management platform built on KVM.** Originating as the upstream codebase for Red Hat Virtualization (RHV), oVirt provides enterprise storage domains (NFS, iSCSI, Fibre Channel, GlusterFS), high availability, live migration, and fine-grained role-based access control.
 
-- **[Ganeti](https://github.com/ganeti/ganeti)** [![GitHub stars](https://img.shields.io/github/stars/ganeti/ganeti?style=social&color=white)](https://github.com/ganeti/ganeti/stargazers)  
+- **[Ganeti](https://github.com/ganeti/ganeti)** [![GitHub_Stars](https://img.shields.io/github/stars/ganeti/ganeti?style=social&color=white)](https://github.com/ganeti/ganeti/stargazers)  
   **Lightweight cluster virtual server management tool.** Developed and utilized extensively within Google for commodity hardware clustering, Ganeti automates VM failover, replication, and disaster recovery using KVM or Xen hypervisors along with DRBD or shared networked storage.
 
-- **[Proxmox VE Manager](https://github.com/proxmox/pve-manager)** [![GitHub stars](https://img.shields.io/github/stars/proxmox/pve-manager?style=social&color=white)](https://github.com/proxmox/pve-manager/stargazers)  
+- **[Proxmox VE Manager](https://github.com/proxmox/pve-manager)** [![GitHub_Stars](https://img.shields.io/github/stars/proxmox/pve-manager?style=social&color=white)](https://github.com/proxmox/pve-manager/stargazers)  
   **The homelab, SMB, and self-hoster favorite for bare-metal virtualization.** Open-source virtualization platform combining KVM for VMs and LXC for lightweight system containers. Built on Debian with integrated web-based GUI, software-defined networking (SDN fabrics), ZFS storage with live RAIDZ expansion, Proxmox Backup Server integration, and high availability clustering.
 
 ---
