@@ -30,71 +30,30 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The worldwide Infrastructure-as-a-Service (IaaS) market is estimated to reach approximately **$287 billion by 2026** (up from ~$172 billion in 2024), driven largely by accelerated enterprise cloud-native modernization and high demand for AI-optimized compute infrastructure. Market dynamics are **heavily concentrated at the top**—where the top 5 hyperscale cloud providers account for roughly **82%** of global spend in a winner-takes-most structure—coexisting alongside a rapidly expanding, fragmented layer of specialized neoclouds, GPU cloud providers, and European sovereign infrastructure platforms.
 
 ## SaaS/Hosted Platforms
 
+| Platform | Company Valuation / Revenue | Starting Pricing Tier | Free Tier / Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Azure Virtual Machines](https://azure.microsoft.com/en-us/products/virtual-machines)** | ~$3.1T Market Cap (Microsoft) | ~$0.0052/hr (~$3.80/month) for `B1ls` (1 vCPU, 0.5 GiB RAM) | 30-day free trial with $200 credit; plus 12 months free of 750 hrs/month of `B1s`, `B2pts v2`, and `B2ats v2` VMs, and 55+ always-free services | Azure's IaaS offering with strong Windows Server and Active Directory integration, hybrid cloud via Azure Arc, and enterprise governance through Azure Policy. Best for organizations already invested in the Microsoft ecosystem. |
+| **[AWS EC2](https://aws.amazon.com/ec2/)** | ~$2.2T Market Cap (Amazon) | ~$0.0042/hr (~$3.07/month) for `t4g.nano` (2 vCPUs, 0.5 GiB RAM) | 12 months free tier with 750 hours/month of Linux and Windows `t2.micro` or `t3.micro` instances | The market-leading public cloud compute service. Broadest instance type selection (general purpose, compute optimized, memory optimized, GPU, ARM Graviton), global region coverage, and deep integration with the AWS ecosystem. |
+| **[Google Compute Engine](https://cloud.google.com/compute)** | ~$2.1T Market Cap (Alphabet) | ~$0.0075/hr (~$5.48/month) for `e2-micro` (2 vCPUs, 1 GB RAM) | 90-day free trial with $300 credit; plus Always Free tier with 1 non-preemptible `e2-micro` VM per month in US regions and 30 GB standard persistent disk | GCP's VM service with custom machine types, live migration, and sustained use discounts. Tight integration with BigQuery, GKE, and Google's networking infrastructure. Best for GCP-native architectures. |
+| **[Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud/)** | ~$480B Market Cap (Oracle) | ~$0.0107/hr (~$7.81/month) for `VM.Standard.E5.Flex` (1 OCPU, 1 GB RAM) | 30-day free trial with $300 credit; plus Always Free tier of up to 4 Ampere A1 ARM compute cores & 24 GB RAM (usable as up to 4 VMs) and 2 AMD-based `VM.Standard.E2.1.Micro` instances | Oracle's cloud with competitive pricing for compute and strong database integration (Autonomous Database, Exadata). Generous Always Free tier. Best for Oracle database workloads and cost-sensitive general compute. |
+| **[DigitalOcean Droplets](https://www.digitalocean.com/products/droplets)** | ~$11B Market Cap | $4.00/month ($0.00595/hr) for Basic Droplet (1 vCPU, 512 MB RAM, 10 GB SSD, 500 GB transfer) | 60-day free trial with $200 platform credit for new accounts across compute, managed databases, and storage | Developer-friendly cloud with simple pricing, predictable bandwidth allowances, and a clean UI. Best for small teams, startups, and developers who want straightforward VMs without hyperscaler complexity. |
+| **[Vultr](https://www.vultr.com/)** | $3.5B Valuation (The Constant Company) | $2.50/month ($0.004/hr) for Cloud Compute IPv6-only (1 vCPU, 0.5 GB RAM, 10 GB SSD, 0.5 TB transfer; $3.50/mo with IPv4) | 30-day free trial credit of up to $200–$300 (via promotional onboarding); plus approval-based Free Tier program for eligible developers | Independent cloud with global region coverage, high-frequency compute options, and bare metal availability. Best for teams seeking an alternative to the hyperscalers with broad geographic reach. |
+| **[OVHcloud](https://www.ovhcloud.com/)** | ~€2.2B Market Cap (~$2.5B) | ~$0.012/hr (~$7.00/month) for `d2-2` Discovery instance (1 vCore, 2 GB RAM, 25 GB SSD) | 30-day Public Cloud free trial with $200 / €200 credit for new accounts to test instances, object storage, and databases | European cloud provider with dedicated servers, public cloud instances, and private cloud options. Strong on data sovereignty and GDPR compliance. Best for European organizations requiring local infrastructure. |
+| **[Hetzner Cloud](https://www.hetzner.com/cloud)** | ~€500M–€600M Annual Revenue (Est.) | €5.49/month (~€0.0088/hr) for `CX23` (2 vCPUs, 4 GB RAM, 40 GB NVMe) or €6.49/month for `CAX11` ARM | No permanent free tier; 14-day promotional sign-up vouchers (€20–€50 credit) available via partner campaigns | European cloud provider with exceptionally low pricing for dedicated-vCPU and shared-vCPU instances. Data centers in Germany, Finland, and the US. Best for cost-sensitive workloads requiring European data residency. |
+| **[Scaleway](https://www.scaleway.com/)** | ~€100M–€200M Annual Revenue (Iliad Group) | €0.0006/hr (~€0.44/month) for `STARDUST1-S` (1 vCPU, 1 GB RAM, 10 GB SSD; IPv4 adds ~€0.004/hr); €0.01428/hr (~€10.42/month) for `PLAY2-PICO` | 30-day promotional credits (typically €100 for verified business accounts); plus permanent monthly free tier allowances (75 GB object storage egress, 1M serverless function calls, 1M generative API tokens) | French cloud provider with GPU instances, ARM-based offerings (Ampere), and bare metal. Best for European teams needing GPU or ARM compute with EU data residency. |
 
-
-- **[AWS EC2](https://aws.amazon.com/ec2/)**  
-
-  The market-leading public cloud compute service. Broadest instance type selection (general purpose, compute optimized, memory optimized, GPU, ARM Graviton), global region coverage, and deep integration with the AWS ecosystem. Consumption-based pricing with Savings Plans and Spot instances for cost optimization.
-
-
-
-- **[Google Compute Engine](https://cloud.google.com/compute)**  
-
-  GCP's VM service with custom machine types, live migration, and sustained use discounts. Tight integration with BigQuery, GKE, and Google's networking infrastructure. Best for GCP-native architectures and workloads benefiting from Google's global network.
-
-
-
-- **[Microsoft Azure Virtual Machines](https://azure.microsoft.com/en-us/products/virtual-machines)**  
-
-  Azure's IaaS offering with strong Windows Server and Active Directory integration, hybrid cloud via Azure Arc, and enterprise governance through Azure Policy. Best for organizations already invested in the Microsoft ecosystem.
-
-
-
-- **[Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud/)**  
-
-  Oracle's cloud with competitive pricing for compute and strong database integration (Autonomous Database, Exadata). Generous Always Free tier. Best for Oracle database workloads and cost-sensitive general compute.
-
-
-
-- **[DigitalOcean Droplets](https://www.digitalocean.com/products/droplets)**  
-
-  Developer-friendly cloud with simple pricing, predictable bandwidth allowances, and a clean UI. Best for small teams, startups, and developers who want straightforward VMs without hyperscaler complexity.
-
-
-
-- **[Hetzner Cloud](https://www.hetzner.com/cloud)**  
-
-  European cloud provider with exceptionally low pricing for dedicated-vCPU instances. Data centers in Germany, Finland, and the US. Best for cost-sensitive workloads requiring European data residency.
-
-
-
-- **[Vultr](https://www.vultr.com/)**  
-
-  Independent cloud with global region coverage, high-frequency compute options, and bare metal availability. Best for teams seeking an alternative to the hyperscalers with broad geographic reach.
-
-
-
-- **[OVHcloud](https://www.ovhcloud.com/)**  
-
-  European cloud provider with dedicated servers, public cloud instances, and private cloud options. Strong on data sovereignty and GDPR compliance. Best for European organizations requiring local infrastructure.
-
-
-
-- **[Scaleway](https://www.scaleway.com/)**  
-
-  French cloud provider with GPU instances, ARM-based offerings (Ampere), and bare metal. Best for European teams needing GPU or ARM compute with EU data residency.
 
 
 
