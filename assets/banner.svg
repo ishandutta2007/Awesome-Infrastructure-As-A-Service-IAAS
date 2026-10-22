@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#4facfe" stop-opacity="0.3" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.8" stroke-opacity="0.6"/>
+      <circle cx="40" cy="40" r="1" fill="#38bdf8" fill-opacity="0.4" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .grid-bg {
+      animation: panGrid 30s linear infinite;
+    }
+    @keyframes panGrid {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(40px); }
+    }
+
+    .pulse-node {
+      animation: pulseGlow 4s ease-in-out infinite alternate;
+    }
+    @keyframes pulseGlow {
+      0% { r: 3px; opacity: 0.3; }
+      100% { r: 6px; opacity: 0.9; }
+    }
+
+    .flow-line {
+      stroke-dasharray: 8, 12;
+      animation: flowDash 20s linear infinite;
+    }
+    @keyframes flowDash {
+      to { stroke-dashoffset: -200; }
+    }
+
+    .float-card-1 {
+      animation: floatSlow1 7s ease-in-out infinite alternate;
+    }
+    .float-card-2 {
+      animation: floatSlow2 9s ease-in-out infinite alternate;
+    }
+    @keyframes floatSlow1 {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-12px); }
+    }
+    @keyframes floatSlow2 {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(10px); }
+    }
+
+    .badge-pill {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .banner-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+
+    .banner-sub {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 400;
+    }
+  </style>
+
+  <!-- Deep Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+
+  <!-- Animated Cyber Grid in Background -->
+  <rect width="100%" height="100%" fill="url(#cyberGrid)" class="grid-bg" opacity="0.7" />
+
+  <!-- Dynamic Ambient Backlight Glows -->
+  <circle cx="200" cy="180" r="140" fill="#38bdf8" opacity="0.08" filter="url(#glow)" />
+  <circle cx="1000" cy="150" r="160" fill="#818cf8" opacity="0.08" filter="url(#glow)" />
+
+  <!-- Dynamic Animated Infrastructure Network (Background / Accent) -->
+  <g opacity="0.45">
+    <!-- Connecting network lines -->
+    <path d="M 120 80 Q 250 140 380 90 T 640 120 T 920 80 T 1100 130" fill="none" stroke="#38bdf8" stroke-width="1.5" class="flow-line" />
+    <path d="M 80 260 Q 280 200 480 270 T 820 220 T 1120 260" fill="none" stroke="#818cf8" stroke-width="1.5" class="flow-line" style="animation-direction: reverse;" />
+    
+    <!-- Pulsing Nodes -->
+    <circle cx="120" cy="80" r="4" fill="#38bdf8" class="pulse-node" />
+    <circle cx="380" cy="90" r="5" fill="#818cf8" class="pulse-node" style="animation-delay: 1s;" />
+    <circle cx="640" cy="120" r="4" fill="#38bdf8" class="pulse-node" style="animation-delay: 2s;" />
+    <circle cx="920" cy="80" r="5" fill="#c084fc" class="pulse-node" style="animation-delay: 0.5s;" />
+    <circle cx="1100" cy="130" r="4" fill="#38bdf8" class="pulse-node" style="animation-delay: 1.5s;" />
+
+    <circle cx="80" cy="260" r="4" fill="#818cf8" class="pulse-node" style="animation-delay: 2.5s;" />
+    <circle cx="480" cy="270" r="5" fill="#38bdf8" class="pulse-node" style="animation-delay: 1.2s;" />
+    <circle cx="820" cy="220" r="4" fill="#c084fc" class="pulse-node" style="animation-delay: 0.8s;" />
+    <circle cx="1120" cy="260" r="5" fill="#818cf8" class="pulse-node" style="animation-delay: 3s;" />
+  </g>
+
+  <!-- Floating Dynamic Tech Micro-Cards (Sides - non-interfering) -->
+  <g class="float-card-1">
+    <g transform="translate(60, 130)">
+      <rect width="115" height="42" rx="8" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.3" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.4))" />
+      <circle cx="18" cy="21" r="5" fill="#10b981" />
+      <text x="32" y="25" fill="#e2e8f0" class="badge-pill">CLOUD VIRT</text>
+    </g>
+  </g>
+
+  <g class="float-card-2">
+    <g transform="translate(1025, 185)">
+      <rect width="120" height="42" rx="8" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1" stroke-opacity="0.3" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.4))" />
+      <circle cx="18" cy="21" r="5" fill="#38bdf8" />
+      <text x="32" y="25" fill="#e2e8f0" class="badge-pill">BARE METAL</text>
+    </g>
+  </g>
+
+  <!-- Foreground Content: Perfectly clear, elevated & readable -->
+  <g transform="translate(600, 105)" text-anchor="middle">
+    <!-- Category Super-Header / Pill -->
+    <rect x="-140" y="-30" width="280" height="28" rx="14" fill="#1e293b" fill-opacity="0.8" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4" />
+    <text x="0" y="-12" fill="#38bdf8" class="badge-pill" text-anchor="middle">CURATED AWESOME ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="0" y="45" fill="url(#primaryGlow)" class="banner-title" font-size="44" filter="drop-shadow(0 2px 10px rgba(56,189,248,0.3))">
+      Infrastructure as a Service (IaaS)
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="90" fill="#94a3b8" class="banner-sub" font-size="17">
+      Public Hyperscalers, Bare-Metal Clouds &amp; Open-Source Private Cloud Platforms
+    </text>
+
+    <!-- Feature Pills / Badges in Foreground -->
+    <g transform="translate(0, 135)">
+      <g transform="translate(-240, 0)">
+        <rect x="-65" y="-14" width="130" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+        <text x="0" y="4" fill="#38bdf8" class="badge-pill" text-anchor="middle">⚡ Virtual Machines</text>
+      </g>
+      <g transform="translate(-80, 0)">
+        <rect x="-65" y="-14" width="130" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+        <text x="0" y="4" fill="#a78bfa" class="badge-pill" text-anchor="middle">🌐 Cloud Platforms</text>
+      </g>
+      <g transform="translate(80, 0)">
+        <rect x="-65" y="-14" width="130" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+        <text x="0" y="4" fill="#34d399" class="badge-pill" text-anchor="middle">🔒 Self-Hosted IaaS</text>
+      </g>
+      <g transform="translate(240, 0)">
+        <rect x="-65" y="-14" width="130" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+        <text x="0" y="4" fill="#f472b6" class="badge-pill" text-anchor="middle">🚀 Sovereign Cloud</text>
+      </g>
+    </g>
+  </g>
+</svg>
